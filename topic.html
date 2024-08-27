@@ -1,1 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="shortcut icon" href="thu.png" type="image/png" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title> Project </title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Menu</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+  <div class="menu-item"><a href="Pub.html">Publications</a></div>
+  <div class="menu-item"><a href="teaching.html" >Teaching</a></div>
+  <div class="menu-item"><a href="topic.html" class="current">Teaching</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+  <h1> Research Directions </h1>
+</div>
+<h2>Research on Estimation Algebra</h2>
+
+<p>My research focuses on estimation algebra, a powerful framework for nonlinear filtering problems. In this context, we consider a stochastic system described by the following stochastic differential equations:</p>
+
+<p>
+\[
+\begin{aligned}
+dX_t &= f(X_t)dt + \sum_{i=1}^m g_i(X_t) \circ dW_t^i \\
+dY_t &= h(X_t)dt + dV_t
+\end{aligned}
+\]
+</p>
+
+<p>where \(X_t\) is the state process, \(Y_t\) is the observation process, \(W_t\) and \(V_t\) are Wiener processes, and \(\circ\) denotes the Stratonovich integral.</p>
+
+<p>The nonlinear filtering problem aims to compute the conditional expectation \(\mathbb{E}[f(X_t)|Y_s, 0 \leq s \leq t]\). The evolution of the unnormalized conditional density \(p(t,x)\) is governed by the Duncan-Mortensen-Zakai equation:</p>
+
+<p>
+\[
+dp(t,x) = \mathcal{L}p(t,x)dt + \sum_{k=1}^p h_k(x)p(t,x)dY_t^k
+\]
+</p>
+
+<p>where \(\mathcal{L}\) is the forward diffusion operator.</p>
+
+<p>My work extends estimation algebra to more general settings, including:</p>
+
+<ol>
+  <li>Filtering problems on general manifolds \(M\), where the state space is no longer restricted to \(\mathbb{R}^n\).</li>
+  <li>Systems with non-Gaussian noise, where the driving processes are more general Lévy processes.</li>
+</ol>
+
+<p>The core of our approach is based on the finite-dimensional representation of the stochastic partial differential equation (SPDE). We seek a function \(K: M \times B \to N\) such that:</p>
+
+<p>
+\[
+K_K = \bigcup_{x \in M, b \in B} \hat{K}(x, b)
+\]
+</p>
+
+<p>is a finite-dimensional canonical submanifold of \(J^{\infty}(M, N)\), where \(\hat{K}(x, b) = (x, D^{\infty}(K)(x, b))\).</p>
+
+<p>This research aims to broaden the applicability of estimation algebra and enhance our ability to solve complex nonlinear filtering problems in various fields, contributing to both theoretical understanding and practical applications in real-world systems.</p>
 
